@@ -11,7 +11,6 @@ const initalstate:IModalState = {
 };
 
 const modalReducer = (state = initalstate, action: any) => {
-  console.log("modal reducer", action);
   switch (action.type) {
     case BEER_SELECTED:
       state.isOpen = action.payload.setBool;
